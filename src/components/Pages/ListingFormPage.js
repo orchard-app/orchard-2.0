@@ -3,7 +3,7 @@ import ListingForm from "../NewListingForm/ListingForm";
 
 const ListingFormPage = () => (
     <div>
-    <h1>Add an Item to Inventory</h1>
+    <h1>Create New Listing</h1>
         <ListingForm />
     </div>
 );
