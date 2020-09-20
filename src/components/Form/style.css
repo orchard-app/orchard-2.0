@@ -1,0 +1,65 @@
+#root {
+  padding: 4%;
+  font-weight: 4%;
+  font-family: 'Rubik', sans-serif;
+  color: #00034d;
+}
+.navbar {
+  background: linear-gradient(0deg, rgba(134,134,134,0.700717787114846) 27%, rgba(170,170,170,0.6811099439775911) 66%);
+}
+.nav-tabs {
+  margin-top: 5%;
+}
+
+#nav-logo {
+  font-family: 'Alata', sans-serif;
+  color: navy;
+    -webkit-text-fill-color: orange;
+    -webkit-text-stroke-width: .026em;
+    display: grid;
+    justify-content: center;
+  font-size: 1em;
+}
+.form {
+  margin: 20px;
+  display: grid;
+  justify-content: center;
+}
+
+.form input {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 100%;
+}
+body {
+  background-image: url(bgd.png);
+}
+
+#welcome {
+  font-family: 'Yellowtail', cursive;
+  display: grid;
+  justify-content: center;
+  margin-top: 1em;
+}
+#logo {
+  font-family: 'Alata', sans-serif;
+  color: navy;
+    -webkit-text-fill-color: orange;
+    -webkit-text-stroke-width: .026em;
+    display: grid;
+    justify-content: center;
+  font-size: 6em;
+}
+
+#form-font {
+  font-family: 'Montserrat', sans-serif;
+}
+.table{
+  margin-top: 8%;
+}
+
+.card-about{
+  max-width: 300px;
+}
+
