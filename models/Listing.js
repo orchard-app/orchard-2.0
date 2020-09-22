@@ -1,26 +1,23 @@
 const Sequelize = require("sequelize");
-const db = require("database");
-
-
+const db = require("../database/index");
 
 module.exports = db.sequelize.define("listing", {
-   
   id: {
     type: Sequelize.INTEGER,
     autoIncrement: true,
     primaryKey: true,
   },
   listing_title: {
-        type: Sequelize.STRING,
-         allowNull: false
+    type: Sequelize.STRING,
+    allowNull: false,
   },
   city: {
     type: Sequelize.STRING,
-    allowNull: false
-  }, 
+    allowNull: false,
+  },
   state: {
     type: Sequelize.STRING,
-     allowNull: false
+    allowNull: false,
   },
   zipcode: {
     type: Sequelize.INTEGER,
@@ -33,7 +30,7 @@ module.exports = db.sequelize.define("listing", {
   },
   end_date: {
     type: Sequelize.DECIMAL(10, 2),
-     allowNull: false,
+    allowNull: false,
   },
   start_time: {
     type: Sequelize.DATEONLY,
@@ -43,4 +40,4 @@ module.exports = db.sequelize.define("listing", {
     type: Sequelize.DATEONLY,
     allowNull: false,
   },
-  });
+});
