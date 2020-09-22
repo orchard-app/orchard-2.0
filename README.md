@@ -66,3 +66,31 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+# Wireframes
+
+## Entity Relationship Diagram
+
+### For every user, there can be many items in their inventory as well as many active listings. In a listing, all of the user's items are posted.
+
+![entity relationship diagram](./wireframes/erd-orchard-2-no-scribbles.png)
+
+sign up page:
+
+![login page](./wireframes/newsignupformfinal.png)
+
+swimlane diagram:
+
+![swimlane diagram](./wireframes/orchard2.png)
+
+landing page:
+
+![landing page](./wireframes/landingpage.png)
+
+new listing form:
+
+![new listing form](./wireframes/newexchangeform.png)
+
+preview of post:
+
+![preview of post](./wireframes/postpreview.png)
