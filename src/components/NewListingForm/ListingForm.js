@@ -1,21 +1,21 @@
-import React, { Component } from 'react';
-import "./style.css"
-import TimePicker from 'react-bootstrap-time-picker';
+import React, { Component } from "react";
+import "./style.css";
+import TimePicker from "react-bootstrap-time-picker";
 // import { item } from './userFunctions';
 
 export default class ListingForm extends Component {
   constructor() {
     super();
     this.state = {
-      title: '',
-      address: '',
-      city: '',
-      USState: '',
-      zip: '',
-      start_time: '',
-      end_time: '',
-      start_day: '',
-      end_day: ''
+      title: "",
+      address: "",
+      city: "",
+      USState: "",
+      zip: "",
+      start_time: "",
+      end_time: "",
+      start_day: "",
+      end_day: "",
     };
     this.handleInputChange = this.handleInputChange.bind(this);
     this.handleFormSubmit = this.handleFormSubmit.bind(this);
@@ -26,9 +26,12 @@ export default class ListingForm extends Component {
   }
   maxLengthCheck = (object) => {
     if (object.target.value.length > object.target.maxLength) {
-     object.target.value = object.target.value.slice(0, object.target.maxLength)
-      }
+      object.target.value = object.target.value.slice(
+        0,
+        object.target.maxLength
+      );
     }
+  };
 
   handleFormSubmit(event) {
     event.preventDefault();
@@ -42,7 +45,7 @@ export default class ListingForm extends Component {
       start_time: this.state.start_time,
       end_time: this.state.end_time,
       start_day: this.state.start_day,
-      end_day: this.state.end_day
+      end_day: this.state.end_day,
     };
 
     // if (!this.state.title || !this.state.address) {
@@ -64,6 +67,7 @@ export default class ListingForm extends Component {
             onChange={this.handleInputChange}
             type="text"
             placeholder="Listing Title"
+            aria-label="Listing-Title"
           />
           <input
             value={this.state.address}
@@ -84,7 +88,9 @@ export default class ListingForm extends Component {
             onChange={this.handleInputChange}
             name="USState"
           >
-            <option value="State"placeholder="State">State</option>
+            <option value="State" placeholder="State">
+              State
+            </option>
             <option value="AL">AL</option>
             <option value="AK">AK</option>
             <option value="AS">AS</option>
