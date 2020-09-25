@@ -35,7 +35,7 @@ export default class ListingForm extends Component {
 
   handleFormSubmit(event) {
     event.preventDefault();
-
+    // eslint-disable-next-line
     const listingCategories = {
       title: this.state.title,
       address: this.state.address,
