@@ -5,7 +5,7 @@ import Add from "./Pages/Add";
 // import View from './Pages/View';
 import Contact from "./Pages/Contact";
 import About from "./Pages/About";
-// import ListingFormPage from './Pages/ListingFormPage';
+import ListingFormPage from "./Pages/ListingFormPage";
 
 class OrchardContainer extends Component {
   state = {
@@ -21,8 +21,8 @@ class OrchardContainer extends Component {
       return <Menu />;
     } else if (this.state.currentPage === "Add") {
       return <Add />;
-      // } else if (this.state.currentPage === 'New Listing') {
-      //   return <ListingFormPage />;
+    } else if (this.state.currentPage === "New Listing") {
+      return <ListingFormPage />;
     } else if (this.state.currentPage === "Contact") {
       return <Contact />;
       // } else if (this.state.currentPage === 'View') {
