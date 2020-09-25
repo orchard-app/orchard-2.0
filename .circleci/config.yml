@@ -25,10 +25,9 @@ jobs:
             ./cc-test-reporter before-build
             npm test -- --coverage
             ./cc-test-reporter after-build --exit-code $?
-      - run: # run frontend tests
-          name: Run frontend Test and Coverage
+      - run: # run frontend and backend tests
+          name: Run frontend and backend tests and coverage
           command: |
             ./cc-test-reporter before-build
-            cd client
             npm test -- --coverage
             ./cc-test-reporter after-build --exit-code $?
