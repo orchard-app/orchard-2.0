@@ -1,8 +1,6 @@
 import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
 import ListingForm from "./ListingForm";
-import ListingFormPage from "../Pages/ListingFormPage";
 
 const setup = () => {
   const utils = render(<ListingForm />);
