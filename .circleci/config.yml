@@ -21,16 +21,8 @@ jobs:
             - ./node_modules
 
       - run: # run backend tests
-          name: Run backend tests and coverage
+          name: Run frontend backend tests and coverage
           command: |
             ./cc-test-reporter before-build
-            npm test -- --coverage
-            ./cc-test-reporter after-build --exit-code $?
-
-      - run: # run front end tests
-          name: Run front end tests and coverage
-          command: |
-            ./cc-test-reporter before-build
-            cd client
             npm test -- --coverage
             ./cc-test-reporter after-build --exit-code $?
