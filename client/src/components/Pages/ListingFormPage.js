@@ -2,9 +2,9 @@ import React from "react";
 import ListingForm from "../NewListingForm/ListingForm";
 
 const ListingFormPage = () => (
-    <div>
+  <div>
     <h1>Create New Listing</h1>
-        <ListingForm />
-    </div>
+    <ListingForm />
+  </div>
 );
 export default ListingFormPage;

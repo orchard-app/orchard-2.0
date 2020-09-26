@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./style.css";
-import TimePicker from "react-bootstrap-time-picker";
+// import TimePicker from "react-bootstrap-time-picker";
 // import { item } from './userFunctions';
 
 export default class ListingForm extends Component {
@@ -35,7 +35,7 @@ export default class ListingForm extends Component {
 
   handleFormSubmit(event) {
     event.preventDefault();
-
+    // eslint-disable-next-line
     const listingCategories = {
       title: this.state.title,
       address: this.state.address,
@@ -185,9 +185,9 @@ export default class ListingForm extends Component {
             placeholder="End Date"
           />
           Start Time:
-          <TimePicker start="10:00" end="21:00" step={30} />
+          {/* <TimePicker start="10:00" end="21:00" step={30} /> */}
           End Time:
-          <TimePicker start="10:00" end="21:00" step={30} />
+          {/* <TimePicker start="10:00" end="21:00" step={30} /> */}
           <button onClick={this.handleFormSubmit}>Submit</button>
         </form>
       </div>

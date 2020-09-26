@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import { item } from './userFunctions';
+import { item } from './userFunctions';
 
 export default class ItemForm extends Component {
   constructor() {
