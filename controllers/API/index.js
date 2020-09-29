@@ -1,10 +1,10 @@
 const router = require("express").Router();
-const inventoryRoutes = require("./inventory"); // route works
 const itemRoutes = require("./items.js break"); // route works
-const categoryRoutes = require("./categories");
+const listingRoutes = require("../Listings");
 
 router.use("/inventory", inventoryRoutes); // add inventory
 router.use("/items", itemRoutes); // add items
+router.use("/listings", listingRoutes); // add items
 router.use("/categories", categoryRoutes); // add categories
 
 module.exports = router;

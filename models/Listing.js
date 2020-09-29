@@ -11,6 +11,10 @@ module.exports = db.sequelize.define("listing", {
     type: Sequelize.STRING,
     // allowNull: false,
   },
+  address: {
+    type: Sequelize.STRING,
+    // allowNull: false,
+  },
   city: {
     type: Sequelize.STRING,
     // allowNull: false,
