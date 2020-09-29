@@ -18,7 +18,7 @@ function App() {
         <Route exact path="/menu" component={OrchardContainer} />
         {/* <Route exact path="/items" component={View} /> */}
         <Route exact path="/about" component={About} />
-        <Route exact path="/newlisting" component={ListingFormPage} />
+        <Route exact path="/menu#NewListing" component={ListingFormPage} />
         <Route exact path="/menu#Add" component={Add} />
       </Router>
       <Footer />

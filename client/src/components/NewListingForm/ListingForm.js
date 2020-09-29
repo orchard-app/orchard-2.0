@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import "./style.css";
+import { listing } from '../userFunctions';
+
 // import TimePicker from "react-bootstrap-time-picker";
-// import { item } from './userFunctions';
 
 export default class ListingForm extends Component {
   constructor() {
@@ -10,12 +11,12 @@ export default class ListingForm extends Component {
       title: "",
       address: "",
       city: "",
-      USState: "",
-      zip: "",
+      state: "",
+      zipcode: "",
       start_time: "",
       end_time: "",
-      start_day: "",
-      end_day: "",
+      start_date: "",
+      end_date: "",
     };
     this.handleInputChange = this.handleInputChange.bind(this);
     this.handleFormSubmit = this.handleFormSubmit.bind(this);
@@ -40,7 +41,7 @@ export default class ListingForm extends Component {
       title: this.state.title,
       address: this.state.address,
       city: this.state.city,
-      USState: this.state.USState,
+      state: this.state.state,
       zip: this.state.zip,
       start_time: this.state.start_time,
       end_time: this.state.end_time,
@@ -48,13 +49,13 @@ export default class ListingForm extends Component {
       end_day: this.state.end_day,
     };
 
-    // if (!this.state.title || !this.state.address) {
-    //   alert('Fill out the full information please!');
-    // } else {
-    //   item(listingCategories).then((res) => {
-    //     alert(`${this.state.name} has been successfully saved`);
-    //   });
-    // }
+    if (!this.state.title || !this.state.address) {
+      alert('Fill out the full information please!');
+    } else {
+      listing(listingCategories).then((res) => {
+        alert(`${this.state.title} has been successfully saved`);
+      });
+    }
   }
 
   render() {
@@ -84,9 +85,9 @@ export default class ListingForm extends Component {
             placeholder="City"
           />
           <select
-            value={this.state.USState}
+            value={this.state.state}
             onChange={this.handleInputChange}
-            name="USState"
+            name="state"
           >
             <option value="State" placeholder="State">
               State

@@ -16,3 +16,24 @@ export const item = (newItem) => {
       console.log(err);
     });
 };
+
+export const listing = (newListing) => {
+  return axios
+    .post("/api/listings/listings", {
+      title: newListing.title,
+      address: newListing.address,
+      city: newListing.city,
+      state: newListing.state,
+      zipcode: newListing.zipcode,
+      start_date: newListing.start_date,
+      end_date: newListing.end_date,
+      start_time: newListing.start_time,
+      end_time: newListing.end_time
+    })
+    .then((res) => {
+      console.log("TESTING req.body");
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+};
