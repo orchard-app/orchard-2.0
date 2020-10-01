@@ -15,7 +15,7 @@ function App() {
     <div className="everything">
       <Navbar />
       <Router>
-        <Route exact path="/authorize" component={Form} />
+        <Route exact path="/" component={Form} />
         <Route exact path="/menu" component={OrchardContainer} />
         {/* <Route exact path="/items" component={View} /> */}
         <Route exact path="/about" component={About} />
