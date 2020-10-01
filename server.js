@@ -8,7 +8,9 @@ const express = require("express");
 const path = require("path");
 //const routes = require('./controllers/');
 const app = express();
+require("dotenv").config();
 const PORT = process.env.PORT || 3001;
+const appOrigin = process.env.APP_ORIGIN;
 var db = require("./database");
 
 // Define middleware here
