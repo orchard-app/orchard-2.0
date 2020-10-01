@@ -1,9 +1,9 @@
-const express = require("express");
+const express = require('express');
 const listing = express.Router();
 
-const Listing = require("../models/Listing");
+const Listing = require('../models/Listing');
 
-listing.post("/listings", (req, res) => {
+listing.post('/listings', (req, res) => {
   const userInput = req.body;
   Listing.create({
     listing_title: userInput.listing_title,
@@ -13,7 +13,6 @@ listing.post("/listings", (req, res) => {
     zipcode: userInput.zipcode,
     start_date: userInput.start_date,
     end_date: userInput.end_date,
-
   })
   .then((listing) => res.status(201).json({status: 'Listing Added!'}))
   .catch((err) =>
@@ -21,7 +20,7 @@ listing.post("/listings", (req, res) => {
     );
 })
 
-listing.get("/listings", (req, res) => {
+listing.get('/listings', (req, res) => {
   Listing.findAll()
     // If successful, send status code and json object of all listing in db
     .then((dbList) => res.status(200).json(dbList))

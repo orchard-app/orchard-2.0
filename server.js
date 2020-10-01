@@ -19,6 +19,7 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
   // app.use('/api/categories', require('./controllers/Categories'));
   app.use("/api/items", require("./controllers/Items"));
+  app.use("/api/listings", require("./controllers/Listings"));
   app.get("*", (req, res) => {
     res.sendFile(path.join(__dirname + "/client/build/"));
   });

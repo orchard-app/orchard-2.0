@@ -2,8 +2,6 @@ import React, { Component } from "react";
 import "./style.css";
 import { listing } from '../userFunctions';
 
-// import TimePicker from "react-bootstrap-time-picker";
-
 export default class ListingForm extends Component {
   constructor() {
     super();
@@ -186,9 +184,21 @@ export default class ListingForm extends Component {
             placeholder="End Date"
           />
           Start Time:
-          {/* <TimePicker start="10:00" end="21:00" step={30} /> */}
+          <input 
+          value={this.state.start_time}
+          name="start_time"
+          onChange={this.handleInputChange}
+          type="time"
+          placeholder="Start Time"
+          />
           End Time:
-          {/* <TimePicker start="10:00" end="21:00" step={30} /> */}
+          <input 
+          value={this.state.end_time}
+          name="end_time"
+          onChange={this.handleInputChange}
+          type="time"
+          placeholder="End Time"
+          />
           <button onClick={this.handleFormSubmit}>Submit</button>
         </form>
       </div>
