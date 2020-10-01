@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
+  "private": true,
   "engines": {
     "node": "13.12.0"
   },
@@ -20,12 +21,13 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@auth0/auth0-react": "^1.1.0",
     "@babel/plugin-proposal-class-properties": "^7.10.4",
     "@babel/plugin-transform-modules-commonjs": "^7.10.4",
     "@babel/preset-env": "^7.10.4",
     "@babel/preset-react": "^7.10.4",
     "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
+    "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.2.1",
     "babel-jest": "^24.9.0",
     "concurrently": "^5.3.0",
@@ -40,14 +42,15 @@
     "jest-transform-css": "^2.0.0",
     "jest-transform-file": "^1.1.1",
     "nodemon": "^1.18.7",
-    "react": "^16.8.6",
+    "react": "^16.13.1",
     "react-bootstrap": "^1.0.0-beta.14",
     "react-dom": "^16.8.6",
-    "react-router-dom": "^5.0.1",
-    "react-scripts": "^3.0.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^3.4.1",
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
+    "axios": "^0.20.0",
     "babel-eslint": "^10.0.1",
     "bcrypt": "^5.0.0",
     "cors": "^2.8.5",
