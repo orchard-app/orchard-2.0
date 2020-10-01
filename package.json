@@ -14,11 +14,10 @@
     "seed": "node scripts/seedDB.js",
     "install": "cd client && npm install",
     "build": "cd client && npm run build",
-    "heroku-postbuild": "npm run heroku-install && npm run build",
+    "heroku-postbuild": "npm run build",
     "test": "cross-env && jest --coverage",
     "lint": "eslint \"**/*.js\"",
     "fix": "eslint --fix .",
-    "heroku-config": "set JS_RUNTIME_TARGET_BUNDLE=/app/my/custom/path/js/*.js"
   },
   "author": "",
   "license": "ISC",
