@@ -17,7 +17,7 @@
     "heroku-postbuild": "npm run build",
     "test": "cross-env && jest --coverage",
     "lint": "eslint \"**/*.js\"",
-    "fix": "eslint --fix .",
+    "fix": "eslint --fix ."
   },
   "author": "",
   "license": "ISC",
