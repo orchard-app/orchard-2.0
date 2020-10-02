@@ -38,3 +38,7 @@ export const listing = (newListing) => {
       console.log(err);
     });
 };
+
+export const listItems = () => {
+  return axios.get("/api/listings/listings").then(res => (res.data))
+};

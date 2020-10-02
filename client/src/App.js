@@ -8,6 +8,7 @@ import OrchardContainer from "./components/OrchardContainer";
 import About from "./components/Pages/About";
 import ListingFormPage from "./components/Pages/ListingFormPage";
 import Add from "./components/Pages/Add";
+import Viewlistings from "./components/Pages/Viewlistings";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route exact path="/" component={Form} />
         <Route exact path="/menu" component={OrchardContainer} />
         {/* <Route exact path="/items" component={View} /> */}
+        <Route exact path="/viewlistings" component={Viewlistings}/>
         <Route exact path="/about" component={About} />
         <Route exact path="/menu#NewListing" component={ListingFormPage} />
         <Route exact path="/menu#Add" component={Add} />
