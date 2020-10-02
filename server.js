@@ -8,7 +8,9 @@ const express = require("express");
 const path = require("path");
 //const routes = require('./controllers/');
 const app = express();
+require("dotenv").config();
 const PORT = process.env.PORT || 3001;
+const appOrigin = process.env.APP_ORIGIN;
 var db = require("./database");
 
 // Define middleware here
@@ -23,6 +25,11 @@ if (process.env.NODE_ENV === "production") {
   app.use("/api/user", require("./controllers/Users"));
   app.get("*", (req, res) => {
     res.sendFile(path.join(__dirname + "/client/build/"));
+  });
+} else {
+  app.use(express.static(path.join(__dirname, '/client/public')));
+  app.get("/*", function(req, res) {
+    res.sendFile(path.join(__dirname, "./client/public/index.html"));
   });
 }
 // Add routes, both API and view
