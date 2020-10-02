@@ -13,11 +13,7 @@ import "./index.css";
 
 ReactDOM.render(
   <Router>
-    <Auth0ProviderWithHistory
-     domain="dev-ja5ya0u7.us.auth0.com"
-     clientId="4JRZG7B38YPF1NxPy791E7cyxIR2JlTJ"
-     redirectUri={window.location.origin}
-     >
+    <Auth0ProviderWithHistory>
       <App />
     </Auth0ProviderWithHistory>
   </Router>,
