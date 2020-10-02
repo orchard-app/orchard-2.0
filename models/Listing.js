@@ -7,7 +7,7 @@ module.exports = db.sequelize.define("listing", {
     autoIncrement: true,
     primaryKey: true,
   },
-  listing_title: {
+  title: {
     type: Sequelize.STRING,
     // allowNull: false,
   },
@@ -28,19 +28,23 @@ module.exports = db.sequelize.define("listing", {
   },
 
   start_date: {
-    type: Sequelize.INTEGER,
+    type: Sequelize.DATE,
     // allowNull: false,
   },
   end_date: {
-    type: Sequelize.DECIMAL(10, 2),
+    type: Sequelize.DATE,
     // allowNull: false,
   },
   start_time: {
-    type: Sequelize.DATEONLY,
+    type: Sequelize.STRING,
     // allowNull: false,
   },
   end_time: {
-    type: Sequelize.DATEONLY,
+    type: Sequelize.STRING,
+    // allowNull: false,
+  },
+  details: {
+    type: Sequelize.STRING,
     // allowNull: false,
   },
 });

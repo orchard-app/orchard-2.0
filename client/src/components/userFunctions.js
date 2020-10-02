@@ -28,7 +28,8 @@ export const listing = (newListing) => {
       start_date: newListing.start_date,
       end_date: newListing.end_date,
       start_time: newListing.start_time,
-      end_time: newListing.end_time
+      end_time: newListing.end_time,
+      details: newListing.details,
     })
     .then((res) => {
       console.log("TESTING req.body");

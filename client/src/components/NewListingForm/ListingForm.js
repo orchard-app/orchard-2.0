@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./style.css";
-import { listing } from '../userFunctions';
+import { listing } from "../userFunctions";
 
 // import TimePicker from "react-bootstrap-time-picker";
 
@@ -17,6 +17,7 @@ export default class ListingForm extends Component {
       end_time: "",
       start_date: "",
       end_date: "",
+      details: "",
     };
     this.handleInputChange = this.handleInputChange.bind(this);
     this.handleFormSubmit = this.handleFormSubmit.bind(this);
@@ -42,15 +43,16 @@ export default class ListingForm extends Component {
       address: this.state.address,
       city: this.state.city,
       state: this.state.state,
-      zip: this.state.zip,
+      zipcode: this.state.zipcode,
       start_time: this.state.start_time,
       end_time: this.state.end_time,
-      start_day: this.state.start_day,
-      end_day: this.state.end_day,
+      start_date: this.state.start_date,
+      end_date: this.state.end_date,
+      details: this.state.details,
     };
 
     if (!this.state.title || !this.state.address) {
-      alert('Fill out the full information please!');
+      alert("Fill out the full information please!");
     } else {
       listing(listingCategories).then((res) => {
         alert(`${this.state.title} has been successfully saved`);
@@ -153,8 +155,8 @@ export default class ListingForm extends Component {
             <option value="WY">WY</option>
           </select>
           <input
-            value={this.state.zip}
-            name="zip"
+            value={this.state.zipcode}
+            name="zipcode"
             onChange={this.handleInputChange}
             onInput={this.maxLengthCheck}
             maxLength="5"
@@ -171,24 +173,38 @@ export default class ListingForm extends Component {
           />
           Start Date:
           <input
-            value={this.state.date_received}
-            name="start_day"
+            value={this.state.start_date}
+            name="start_date"
             onChange={this.handleInputChange}
             type="date"
             placeholder="Start Date"
           />
           End Date:
           <input
-            value={this.state.exp_date}
-            name="end_day"
+            value={this.state.end_date}
+            name="end_date"
             onChange={this.handleInputChange}
             type="date"
             placeholder="End Date"
           />
           Start Time:
           {/* <TimePicker start="10:00" end="21:00" step={30} /> */}
+          <input
+            value={this.state.start_time}
+            name="start_time"
+            onChange={this.handleInputChange}
+            type="time"
+            placeholder="Start Time"
+          />
           End Time:
           {/* <TimePicker start="10:00" end="21:00" step={30} /> */}
+          <input
+            value={this.state.end_time}
+            name="end_time"
+            onChange={this.handleInputChange}
+            type="time"
+            placeholder="End Time"
+          />
           <button onClick={this.handleFormSubmit}>Submit</button>
         </form>
       </div>
