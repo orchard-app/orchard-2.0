@@ -5,7 +5,6 @@ import { Button } from "react-bootstrap";
 const LoginButton = () => {
   const { loginWithRedirect } = useAuth0();
   return (
-      !isAuthenticated && (
     <Button
       onClick={() => loginWithRedirect()}
       variant="primary"
@@ -13,7 +12,6 @@ const LoginButton = () => {
     >
       Log In
     </Button>
-    )
   );
 };
 
