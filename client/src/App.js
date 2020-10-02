@@ -24,7 +24,7 @@ const App = () => {
       <NavBar />
       <Container className="flex-grow-1 mt-5">
         <Switch>
-          <Route path="/" exact component={Home} />
+          <Route path="/home" exact component={Home} />
           {/* <Route exact path="/items" component={View} /> */}
           <Route path="/about" component={About} />
           <Route path="/menu#NewListing" component={ListingFormPage} />
