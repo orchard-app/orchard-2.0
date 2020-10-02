@@ -43,7 +43,7 @@ export default class ListingForm extends Component {
       address: this.state.address,
       city: this.state.city,
       state: this.state.state,
-      zip: this.state.zip,
+      zipcode: this.state.zipcode,
       start_time: this.state.start_time,
       end_time: this.state.end_time,
       start_date: this.state.start_date,
@@ -155,8 +155,8 @@ export default class ListingForm extends Component {
             <option value="WY">WY</option>
           </select>
           <input
-            value={this.state.zip}
-            name="zip"
+            value={this.state.zipcode}
+            name="zipcode"
             onChange={this.handleInputChange}
             onInput={this.maxLengthCheck}
             maxLength="5"
@@ -189,21 +189,21 @@ export default class ListingForm extends Component {
           />
           Start Time:
           {/* <TimePicker start="10:00" end="21:00" step={30} /> */}
-          <input 
-          value={this.state.start_time}
-          name="start_time"
-          onChange={this.handleInputChange}
-          type="time"
-          placeholder="Start Time"
+          <input
+            value={this.state.start_time}
+            name="start_time"
+            onChange={this.handleInputChange}
+            type="time"
+            placeholder="Start Time"
           />
           End Time:
           {/* <TimePicker start="10:00" end="21:00" step={30} /> */}
-          <input 
-          value={this.state.end_time}
-          name="end_time"
-          onChange={this.handleInputChange}
-          type="time"
-          placeholder="End Time"
+          <input
+            value={this.state.end_time}
+            name="end_time"
+            onChange={this.handleInputChange}
+            type="time"
+            placeholder="End Time"
           />
           <button onClick={this.handleFormSubmit}>Submit</button>
         </form>
