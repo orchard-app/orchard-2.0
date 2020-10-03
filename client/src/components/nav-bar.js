@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink as RouterNavLink } from "react-router-dom";
-import { Container, Nav, Navbar } from "react-bootstrap";
+import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 
 import { useAuth0 } from "@auth0/auth0-react";
 import LogoutButton from "./logout-button";
@@ -18,20 +18,28 @@ const MainNav = () => (
     </Nav.Link>
     <Nav.Link
       as={RouterNavLink}
+      to="/additem"
+      exact
+      activeClassName="router-link-exact-active"
+    >
+      Browse Listings
+    </Nav.Link>
+    <Nav.Link
+      as={RouterNavLink}
       to="/profile"
       exact
       activeClassName="router-link-exact-active"
     >
       Profile
     </Nav.Link>
-    <Nav.Link
-      as={RouterNavLink}
-      to="/external-api"
-      exact
-      activeClassName="router-link-exact-active"
-    >
-      External API
-    </Nav.Link>
+    <NavDropdown title="Items" id="collasible-nav-dropdown">
+        <NavDropdown.Item href="#additem">Add Item</NavDropdown.Item>
+        <NavDropdown.Item href="#viewitem">View Items</NavDropdown.Item>
+    </NavDropdown>
+    <NavDropdown title="Listings" id="collasible-nav-dropdown">
+        <NavDropdown.Item href="#addlisting">Add Listing</NavDropdown.Item>
+        <NavDropdown.Item href="#viewlistings">View Listings</NavDropdown.Item>
+    </NavDropdown>
   </Nav>
 );
 
