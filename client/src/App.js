@@ -1,17 +1,27 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import Form from "./components/Form";
-import Navbar from "./components/navbar";
-import Footer from "./components/Footer";
-import OrchardContainer from "./components/OrchardContainer";
+import { Route, Switch } from "react-router-dom";
+import { Container } from "react-bootstrap";
+import { useAuth0 } from "@auth0/auth0-react";
+
+import { NavBar, Footer, Loading, PrivateRoute } from "./components";
+import { Home, Profile, ExternalApi } from "./views";
 // import View from './components/Pages/View';
 import About from "./components/Pages/About";
 import ListingFormPage from "./components/Pages/ListingFormPage";
 import Add from "./components/Pages/Add";
 import Viewlistings from "./components/Pages/Viewlistings";
 
-function App() {
+import "./App.css";
+
+const App = () => {
+  const { isLoading } = useAuth0();
+
+  if (isLoading) {
+    return <Loading />;
+  }
+
   return (
+<<<<<<< HEAD
     <div className="everything">
       <Navbar />
       <Router>
@@ -23,9 +33,24 @@ function App() {
         <Route exact path="/menu#NewListing" component={ListingFormPage} />
         <Route exact path="/menu#Add" component={Add} />
       </Router>
+=======
+    <div id="app" className="d-flex flex-column h-100">
+      <NavBar />
+      <Container className="flex-grow-1 mt-5">
+        <Switch>
+          <Route path="/" exact component={Home} />
+          {/* <Route exact path="/items" component={View} /> */}
+          <Route path="/about" component={About} />
+          <Route path="/menu#NewListing" component={ListingFormPage} />
+          <Route path="/menu#Add" component={Add} />
+          <PrivateRoute path="/profile" component={Profile} />
+          <PrivateRoute path="/external-api" component={ExternalApi} />
+        </Switch>
+      </Container>
+>>>>>>> master
       <Footer />
     </div>
   );
-}
+};
 
 export default App;

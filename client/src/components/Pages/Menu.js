@@ -14,6 +14,7 @@ class Menu extends Component {
         <Link to="/items">
           <Card heading="View Items List" />
         </Link>
+        
       </div>
     );
   }

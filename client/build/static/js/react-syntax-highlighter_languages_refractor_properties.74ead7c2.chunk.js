@@ -1,0 +1,2 @@
+(this["webpackJsonpauth0-react-sample"]=this["webpackJsonpauth0-react-sample"]||[]).push([[105],{263:function(t,s,a){"use strict";function e(t){t.languages.properties={comment:/^[ \t]*[#!].*$/m,"attr-value":{pattern:/(^[ \t]*(?:\\(?:\r\n|[\s\S])|[^\\\s:=])+?(?: *[=:] *| ))(?:\\(?:\r\n|[\s\S])|[^\\\r\n])+/m,lookbehind:!0},"attr-name":/^[ \t]*(?:\\(?:\r\n|[\s\S])|[^\\\s:=])+?(?= *[=:] *| )/m,punctuation:/[=:]/}}t.exports=e,e.displayName="properties",e.aliases=[]}}]);
+//# sourceMappingURL=react-syntax-highlighter_languages_refractor_properties.74ead7c2.chunk.js.map
