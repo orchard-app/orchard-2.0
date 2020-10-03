@@ -51,9 +51,8 @@ import AddItem from "./views/add-item";
 import AddListing from "./views/add-listing";
 import ViewItems from "./views/view-items";
 import ViewMyListings from "./views/view-my-listings";
-import Browse from "./views/browse"
+import Browse from "./views/browse";
 // import { browse, view my listings, add item, add listing }
-
 
 import "./App.css";
 
@@ -70,8 +69,8 @@ const App = () => {
       <Container className="flex-grow-1 mt-5">
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/menu#AddListing" component={AddListing} />
-          <Route path="/menu#AddItem" component={AddItem} />
+          <Route path="/addListing" component={AddListing} />
+          <Route path="/addItem" component={AddItem} />
           <Route path="/menu#Browse" component={Browse} />
           <Route path="/menu#ViewItems" component={ViewItems} />
           <Route path="/menu#ViewListings" component={ViewMyListings} />
