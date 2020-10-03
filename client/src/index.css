@@ -1,0 +1,7 @@
+.logo {
+  background-image: url("./orchardtiny.png");
+  width: 2.6rem;
+  height: 3rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
