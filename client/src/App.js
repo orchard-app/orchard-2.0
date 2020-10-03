@@ -4,11 +4,15 @@ import { Container } from "react-bootstrap";
 import { useAuth0 } from "@auth0/auth0-react";
 
 import { NavBar, Footer, Loading, PrivateRoute } from "./components";
-import { Home, Profile, ExternalApi } from "./views";
+import { Home, Profile } from "./views";
 // import View from './components/Pages/View';
-import About from "./components/Pages/About";
-import ListingFormPage from "./components/Pages/ListingFormPage";
-import Add from "./components/Pages/Add";
+import AddItem from "./views/add-item";
+import AddListing from "./views/add-listing";
+import ViewItems from "./views/view-items";
+import ViewMyListings from "./views/view-my-listings";
+import Browse from "./views/browse"
+// import { browse, view my listings, add item, add listing }
+
 
 import "./App.css";
 
@@ -25,12 +29,12 @@ const App = () => {
       <Container className="flex-grow-1 mt-5">
         <Switch>
           <Route path="/" exact component={Home} />
-          {/* <Route exact path="/items" component={View} /> */}
-          <Route path="/about" component={About} />
-          <Route path="/menu#NewListing" component={ListingFormPage} />
-          <Route path="/menu#Add" component={Add} />
+          <Route path="/menu#AddListing" component={AddListing} />
+          <Route path="/menu#AddItem" component={AddItem} />
+          <Route path="/menu#Browse" component={Browse} />
+          <Route path="/menu#ViewItems" component={ViewItems} />
+          <Route path="/menu#ViewListings" component={ViewMyListings} />
           <PrivateRoute path="/profile" component={Profile} />
-          <PrivateRoute path="/external-api" component={ExternalApi} />
         </Switch>
       </Container>
       <Footer />
