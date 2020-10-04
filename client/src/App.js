@@ -71,9 +71,15 @@ const App = () => {
           <Route path="/" exact component={Home} />
           <Route path="/addListing" component={AddListing} />
           <Route path="/addItem" component={AddItem} />
+
+          <Route path="/browseListings" component={Browse} />
+          <Route path="/viewItems" component={ViewItems} />
+          <Route path="/viewListings" component={ViewMyListings} />
+
           <Route path="/menu#Browse" component={Browse} />
           <Route path="/viewitems" component={ViewItems} />
           <Route path="/menu#ViewListings" component={ViewMyListings} />
+
           <PrivateRoute path="/profile" component={Profile} />
         </Switch>
       </Container>

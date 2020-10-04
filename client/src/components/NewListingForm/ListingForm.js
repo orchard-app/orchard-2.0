@@ -23,6 +23,21 @@ export default class ListingForm extends Component {
     this.handleFormSubmit = this.handleFormSubmit.bind(this);
   }
 
+  clearState = () => {
+    this.setState({
+      title: "",
+      address: "",
+      city: "",
+      state: "",
+      zipcode: "",
+      start_time: "",
+      end_time: "",
+      start_date: "",
+      end_date: "",
+      details: "",
+    });
+  };
+
   handleInputChange(event) {
     this.setState({ [event.target.name]: event.target.value });
   }
@@ -58,6 +73,7 @@ export default class ListingForm extends Component {
         alert(`${this.state.title} has been successfully saved`);
       });
     }
+    this.clearState();
   }
 
   render() {

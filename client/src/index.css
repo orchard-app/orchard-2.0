@@ -5,3 +5,8 @@
   background-repeat: no-repeat;
   background-size: contain;
 }
+
+.addItemForm .addItemFormDiv {
+  margin: 5px;
+  
+}

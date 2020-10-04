@@ -23,9 +23,9 @@ const Profile = () => {
           <p className="lead text-muted">{email}</p>
         </Col>
       </Row>
-      <Row>
+      {/* <Row>
         <Highlight>{JSON.stringify(user, null, 2)}</Highlight>
-      </Row>
+      </Row> */}
     </Container>
   );
 };

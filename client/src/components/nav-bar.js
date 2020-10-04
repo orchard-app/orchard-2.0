@@ -18,7 +18,7 @@ const MainNav = () => (
     </Nav.Link>
     <Nav.Link
       as={RouterNavLink}
-      to="/additem"
+      to="/browseListings"
       exact
       activeClassName="router-link-exact-active"
     >
@@ -46,11 +46,15 @@ const MainNav = () => (
 
 
       <NavDropdown.Item href="/addItem">Add Item</NavDropdown.Item>
+
+      <NavDropdown.Item href="/viewItems">View Items</NavDropdown.Item>
+
       <NavDropdown.Item href="/viewitem">View Items</NavDropdown.Item>
+
     </NavDropdown>
     <NavDropdown title="Listings" id="collasible-nav-dropdown">
       <NavDropdown.Item href="/addListing">Add Listing</NavDropdown.Item>
-      <NavDropdown.Item href="#viewlistings">View Listings</NavDropdown.Item>
+      <NavDropdown.Item href="/viewListings">View Listings</NavDropdown.Item>
     </NavDropdown>
   </Nav>
 );
