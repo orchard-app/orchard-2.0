@@ -1,7 +1,6 @@
 import ItemForm from "../components/ItemForm";
 
 import React, { Fragment } from "react";
-import { Hero } from "../components";
 
 const AddItem = () => (
   <Fragment>
