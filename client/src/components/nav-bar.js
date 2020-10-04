@@ -33,23 +33,12 @@ const MainNav = () => (
       Profile
     </Nav.Link>
     <NavDropdown title="Items" id="collasible-nav-dropdown">
-
-      <NavDropdown.Item href="/menu#additem">Add Item</NavDropdown.Item>
-      <NavDropdown.Item href="/menu#viewitem">View Items</NavDropdown.Item>
-    </NavDropdown>
-    <NavDropdown title="Listings" id="collasible-nav-dropdown">
-      <NavDropdown.Item href="/menu#addlisting">Add Listing</NavDropdown.Item>
-      <NavDropdown.Item href="/menu#viewlistings">
-        View Listings
-      </NavDropdown.Item>
-
       <NavDropdown.Item href="/addItem">Add Item</NavDropdown.Item>
       <NavDropdown.Item href="#viewitem">View Items</NavDropdown.Item>
     </NavDropdown>
     <NavDropdown title="Listings" id="collasible-nav-dropdown">
       <NavDropdown.Item href="/addListing">Add Listing</NavDropdown.Item>
       <NavDropdown.Item href="#viewlistings">View Listings</NavDropdown.Item>
-
     </NavDropdown>
   </Nav>
 );
@@ -63,7 +52,7 @@ const AuthNav = () => {
 const NavBar = () => {
   return (
     <Navbar collapseOnSelect expand="sm" bg="dark" variant="dark">
-      <Navbar.Brand href="/">Orchard</Navbar.Brand>
+      <Navbar.Brand as={RouterNavLink} className="logo" to="/" />
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <MainNav />
