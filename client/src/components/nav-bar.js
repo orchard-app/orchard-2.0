@@ -35,7 +35,7 @@ const MainNav = () => (
     <NavDropdown title="Items" id="collasible-nav-dropdown">
 
       <NavDropdown.Item href="/menu#additem">Add Item</NavDropdown.Item>
-      <NavDropdown.Item href="/menu#viewitem">View Items</NavDropdown.Item>
+      <NavDropdown.Item href="/viewitems">View Items</NavDropdown.Item>
     </NavDropdown>
     <NavDropdown title="Listings" id="collasible-nav-dropdown">
       <NavDropdown.Item href="/menu#addlisting">Add Listing</NavDropdown.Item>
@@ -44,7 +44,7 @@ const MainNav = () => (
       </NavDropdown.Item>
 
       <NavDropdown.Item href="/addItem">Add Item</NavDropdown.Item>
-      <NavDropdown.Item href="#viewitem">View Items</NavDropdown.Item>
+      <NavDropdown.Item href="/viewitem">View Items</NavDropdown.Item>
     </NavDropdown>
     <NavDropdown title="Listings" id="collasible-nav-dropdown">
       <NavDropdown.Item href="/addListing">Add Listing</NavDropdown.Item>

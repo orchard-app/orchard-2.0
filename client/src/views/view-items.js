@@ -1,13 +1,10 @@
-import React, { Fragment } from "react";
-
-import { Hero, Content } from "../components";
+import React from 'react';
+import Items from '../components/itemsList';
 
 const ViewItems = () => (
-  <Fragment>
-    <Hero />
-    <hr />
-    <Content />
-  </Fragment>
+  <div>
+    <h1>Inventory</h1>
+    <Items />
+  </div>
 );
-
 export default ViewItems;
