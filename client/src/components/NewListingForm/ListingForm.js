@@ -7,8 +7,10 @@ const formStyle = {
   backgroundColor: "	#D3D3D3",
   padding: "10px 10px 10px 10px",
   border: "solid",
-  borderWidth: "1px",
-  borderColor: "black",
+  borderWidth: "0px",
+  borderColor: "	#808080",
+  opacity: "0.9",
+  boxShadow: "0 0 2px 2px #555",
 };
 const divStyle = {
   paddingBottom: "20px",
