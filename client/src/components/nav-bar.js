@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink as RouterNavLink } from "react-router-dom";
-import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
+import { Nav, Navbar, NavDropdown } from "react-bootstrap";
 
 import { useAuth0 } from "@auth0/auth0-react";
 import LogoutButton from "./logout-button";
