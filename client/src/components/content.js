@@ -4,14 +4,15 @@ import contentData from "../utils/content-data";
 import { Col, Row, Card, Container } from "react-bootstrap";
 const titleStyle = {
   color: "black",
-  fontFamily: "cursive",
+  fontFamily: "Josefin Sans",
   fontSize: "20px",
 };
 const backgroundStyle = {
   backgroundColor: "#D3D3D3",
   borderStyle: "solid",
-  borderWidth: "1px",
+  borderWidth: "0px",
   borderColor: "black",
+  boxShadow: "0 0 2px 2px #555",
 };
 const bodyStyle = {
   alignItems: "flex-start",
