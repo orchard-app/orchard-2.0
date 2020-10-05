@@ -1,7 +1,7 @@
 const express = require("express");
 const listing = express.Router();
 
-const Listing = require("../models/listing");
+const Listing = require("../models/Listing");
 
 listing.post("/listings", (req, res) => {
   const userInput = req.body;
