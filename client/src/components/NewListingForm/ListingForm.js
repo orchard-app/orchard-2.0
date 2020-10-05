@@ -9,7 +9,7 @@ const formStyle = {
   border: "solid",
   borderWidth: "0px",
   borderColor: "	#808080",
-  opacity: "0.9",
+  opacity: "0.8.5",
   boxShadow: "0 0 2px 2px #555",
 };
 const divStyle = {

@@ -38,11 +38,12 @@ export default class ItemForm extends Component {
       date_received: this.state.date_received,
       exp_date: this.state.exp_date,
     };
-
+    console.log(itemList);
     if (!this.state.name || !this.state.quantity) {
       alert("Fill out the full information please!");
     } else {
       item(itemList).then((res) => {
+        console.log(res);
         alert(`${this.state.name} has been successfully saved`);
       });
     }

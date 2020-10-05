@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import axios from 'axios';
+import React, { Component } from "react";
+import axios from "axios";
 
 class Items extends Component {
   constructor() {
@@ -10,9 +10,9 @@ class Items extends Component {
   }
 
   componentDidMount() {
-    axios.get(`/api/items/items`).then((res) => {
+    axios.get("/api/items/items").then((res) => {
       const itemsList = res.data;
-      this.setState({ itemsList });
+      this.setState({ itemsList: itemsList });
       console.log(itemsList);
     });
   }
@@ -20,8 +20,8 @@ class Items extends Component {
   render() {
     return (
       <div>
-        <table class="table">
-          <thead class="thead-dark">
+        <table className="table">
+          <thead className="thead-dark">
             <tr>
               <th scope="col">ID #</th>
               <th scope="col">Item Name</th>
@@ -32,14 +32,14 @@ class Items extends Component {
             </tr>
           </thead>
           <tbody>
-            {this.state.itemsList.map((itemsList) => (
-              <tr>
-                <td key={itemsList.id}>{itemsList.id}</td>
-                <td>{itemsList.name}</td>
-                <td> ${itemsList.price}</td>
-                <td>{itemsList.quantity}</td>
-                <td>{itemsList.date_received}</td>
-                <td>{itemsList.exp_date}</td>
+            {this.state.itemsList.map((item) => (
+              <tr key={item.id}>
+                <td>{item.id}</td>
+                <td>{item.name}</td>
+                <td> ${item.price}</td>
+                <td>{item.quantity}</td>
+                <td>{item.date_received}</td>
+                <td>{item.exp_date}</td>
               </tr>
             ))}
           </tbody>
