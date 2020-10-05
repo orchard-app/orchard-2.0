@@ -79,6 +79,9 @@ export default class ListingForm extends Component {
   render() {
     return (
       <div>
+        <br />
+        Title:
+        <br />
         <form className="form">
           <input
             value={this.state.title}
@@ -88,6 +91,9 @@ export default class ListingForm extends Component {
             placeholder="Listing Title"
             aria-label="Listing-Title"
           />
+          <br />
+          Address:
+          <br />
           <input
             value={this.state.address}
             name="address"
@@ -95,6 +101,9 @@ export default class ListingForm extends Component {
             type="text"
             placeholder="Address"
           />
+          <br />
+          City:
+          <br />
           <input
             value={this.state.city}
             name="city"
@@ -102,6 +111,9 @@ export default class ListingForm extends Component {
             type="text"
             placeholder="City"
           />
+          <br />
+          State:
+          <br />
           <select
             value={this.state.state}
             onChange={this.handleInputChange}
@@ -170,6 +182,9 @@ export default class ListingForm extends Component {
             <option value="WI">WI</option>
             <option value="WY">WY</option>
           </select>
+          <br />
+          Zipcode:
+          <br />
           <input
             value={this.state.zipcode}
             name="zipcode"
@@ -179,15 +194,9 @@ export default class ListingForm extends Component {
             type="number"
             placeholder="'90210'"
           />
-          <textarea
-            className="listingdetails"
-            value={this.state.details}
-            name="details"
-            onChange={this.handleInputChange}
-            type="text"
-            placeholder="Add informations about listing. Example: 'Every weekend from 10-3. Red truck in the front of the parking lot' "
-          />
+          <br />
           Start Date:
+          <br />
           <input
             value={this.state.start_date}
             name="start_date"
@@ -195,7 +204,9 @@ export default class ListingForm extends Component {
             type="date"
             placeholder="Start Date"
           />
+          <br />
           End Date:
+          <br />
           <input
             value={this.state.end_date}
             name="end_date"
@@ -203,7 +214,9 @@ export default class ListingForm extends Component {
             type="date"
             placeholder="End Date"
           />
+          <br />
           Start Time:
+          <br />
           {/* <TimePicker start="10:00" end="21:00" step={30} /> */}
           <input
             value={this.state.start_time}
@@ -212,7 +225,9 @@ export default class ListingForm extends Component {
             type="time"
             placeholder="Start Time"
           />
+          <br />
           End Time:
+          <br />
           {/* <TimePicker start="10:00" end="21:00" step={30} /> */}
           <input
             value={this.state.end_time}
@@ -221,6 +236,18 @@ export default class ListingForm extends Component {
             type="time"
             placeholder="End Time"
           />
+          <br />
+          Details:
+          <br />
+          <textarea
+            className="listingdetails"
+            value={this.state.details}
+            name="details"
+            onChange={this.handleInputChange}
+            type="text"
+            placeholder="Add informations about listing. Example: 'Every weekend from 10-3. Red truck in the front of the parking lot' "
+          />
+          <br />
           <button onClick={this.handleFormSubmit}>Submit</button>
         </form>
       </div>
