@@ -24,7 +24,7 @@ export default class Viewlistings extends Component {
         <Container>
           <Row>
             {this.state.listItemThis.map((item) => (
-              <Col xs={12} sm={12} md={6} lg={4} key={item.id}>
+              <Col key={item.id}>
                 <Card className="text-center">
                   <Card.Header>Starts: {item.start_date}</Card.Header>
                   <Card.Body>

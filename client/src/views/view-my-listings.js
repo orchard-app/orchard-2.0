@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { Hero, Content } from "../components";
+import { Content } from "../components";
 import Viewlistings from "../components/Pages/Viewlistings";
 
 const ViewMyListings = () => (
