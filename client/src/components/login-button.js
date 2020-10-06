@@ -5,9 +5,9 @@ const loginBtnCss = {
   // backgroundColor: "#FF8C00",
   backgroundColor: "black",
   // color: "blue",
-  color: "#FFA500",
-  fontWidth: "5px",
-  borderColor: "#FFA500",
+  color: "orange",
+  fontWidth: "8px",
+  borderColor: "orange",
 };
 
 const LoginButton = () => {
