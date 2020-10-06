@@ -6,7 +6,7 @@ function Adrian() {
       <div className="card card-about">
         <img
           className="card-img-top"
-          src={require("../mango-1.jpg")}
+          src={"https://i.imgur.com/JV8wtlQ.jpg"}
           alt="adrian"
         />
         <div className="card-body">
