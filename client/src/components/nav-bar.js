@@ -106,7 +106,7 @@ const MainNav = () => (
     </Nav.Link>
     <Nav.Link
       as={RouterNavLink}
-      to="/additem"
+      to="/browseListings"
       exact
       activeClassName="router-link-exact-active"
     >

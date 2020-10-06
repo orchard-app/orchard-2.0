@@ -76,9 +76,9 @@ const App = () => {
           <Route path="/viewItems" component={ViewItems} />
           <Route path="/viewListings" component={ViewMyListings} />
 
-          <Route path="/menu#Browse" component={Browse} />
+          {/* <Route path="/menu#Browse" component={Browse} />
           <Route path="/viewitems" component={ViewItems} />
-          <Route path="/menu#ViewListings" component={ViewMyListings} />
+          <Route path="/menu#ViewListings" component={ViewMyListings} /> */}
 
           <PrivateRoute path="/profile" component={Profile} />
         </Switch>
