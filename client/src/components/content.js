@@ -1,6 +1,5 @@
 import React from "react";
 
-import contentData from "../utils/content-data";
 import { Col, Row, Card, Container } from "react-bootstrap";
 const titleStyle = {
   color: "black",
