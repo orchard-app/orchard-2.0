@@ -2,7 +2,7 @@ import React from "react";
 
 function Steve() {
   return (
-    <div>
+    <div className="col-6">
       <div className="card card-about">
         <img
           className="card-img-top"
