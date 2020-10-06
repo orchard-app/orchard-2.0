@@ -36,3 +36,7 @@ body {
 #form-font {
   font-family: "Montserrat", sans-serif;
 }
+
+.card {
+  width: 30%;
+}

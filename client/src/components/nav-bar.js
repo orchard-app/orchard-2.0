@@ -126,7 +126,9 @@ const MainNav = () => (
     </NavDropdown>
     <NavDropdown title="Listings" id="collasible-nav-dropdown">
       <NavDropdown.Item href="/addListing">Add Listing</NavDropdown.Item>
-      <NavDropdown.Item href="/viewListings">View Listings</NavDropdown.Item>
+      <NavDropdown.Item href="/viewListings">
+        View Your Listings
+      </NavDropdown.Item>
     </NavDropdown>
   </Nav>
 );
