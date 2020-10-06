@@ -18,10 +18,6 @@ const bodyStyle = {
 	alignItems: "flex-start",
 };
 
-const containerPadding = {
-	paddingBottom: "50px",
-};
-
 export default class Viewlistings extends Component {
 	state = { listItemThis: [] };
 
