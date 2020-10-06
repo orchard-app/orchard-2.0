@@ -42,13 +42,14 @@ body {
   justify-content: center;
   align-items: center;
 }
-h1, .btn-margin  {
-  font-family: 'Alata', sans-serif;
+h1,
+.btn-margin {
+  font-family: "Alata", sans-serif;
 }
 
 .mr-auto {
   height: 5em;
-  font-family: 'Alata', sans-serif;
+  font-family: "Alata", sans-serif;
   justify-content: center;
   align-items: center;
 }
@@ -56,7 +57,7 @@ h1, .btn-margin  {
 .slogan {
   font-family: "Yellowtail", cursive;
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   border-bottom-width: medium;
   border-bottom-color: dimgray;
   border-bottom-style: solid;
@@ -65,16 +66,18 @@ h1, .btn-margin  {
 
 .abtus {
   padding: 1em;
+  letter-spacing: 2px;
 }
-.second-row{
-  margin-top: 5%
+
+.second-row {
+  margin-top: 5%;
 }
 .card-title {
   font-family: "Yellowtail", cursive;
   font-size: 3em;
 }
-.card-text{
-  font-family: 'Alata', sans-serif;
+.card-text {
+  font-family: "Alata", sans-serif;
 }
 
 #footerlogo {
@@ -98,6 +101,10 @@ h1, .btn-margin  {
 }
 
 h6 {
-  font-family: 'Alata', sans-serif;
+  font-family: "Alata", sans-serif;
   letter-spacing: 2px;
+}
+
+.words {
+  font-family: "Alata", sans-serif;
 }
