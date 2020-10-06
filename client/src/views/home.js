@@ -10,8 +10,8 @@ const Home = () => (
     <Hero />
     <h2 className="slogan"> Put Your Best Fruit Forward.</h2>
     <h1 className="abtus text-center">What is Orchard?</h1>
-    <p className="text-center">
-      Orchard is an inventory management system that enables small scale farmers
+    <p className="text-center words">
+      Orchard is an inventory management system that enables small-scale farmers
       to sell their crops to local farmer's markets.
     </p>
     <h1 className="abtus text-center">About Us</h1>
