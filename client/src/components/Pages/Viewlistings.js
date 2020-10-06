@@ -2,6 +2,26 @@ import React, { Component } from "react";
 import { listItems } from "../userFunctions";
 import { Container, Row, Col, Card } from "react-bootstrap";
 
+const titleStyle = {
+	color: "black",
+	fontFamily: "Josefin Sans",
+	fontSize: "20px",
+};
+const backgroundStyle = {
+	backgroundColor: "#D3D3D3",
+	borderStyle: "solid",
+	borderWidth: "0px",
+	borderColor: "black",
+	boxShadow: "0 0 2px 2px #555",
+};
+const bodyStyle = {
+	alignItems: "flex-start",
+};
+
+const containerPadding = {
+	paddingBottom: "50px",
+};
+
 export default class Viewlistings extends Component {
 	state = { listItemThis: [] };
 
