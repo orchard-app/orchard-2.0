@@ -27,10 +27,7 @@ if (process.env.NODE_ENV === "production") {
     res.sendFile(path.join(__dirname + "/client/build/"));
   });
 } else {
-  app.use(express.static(path.join(__dirname, '/client/public')));
-  app.get("/*", function(req, res) {
-    res.sendFile(path.join(__dirname, "./client/public/index.html"));
-  });
+  app.use(express.static(path.join(__dirname, "/client/public")));
 }
 // Add routes, both API and view
 //app.use(routes);
