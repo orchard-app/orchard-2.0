@@ -10,9 +10,11 @@ function Adrian() {
           alt="adrian"
         />
         <div className="card-body">
-          <h5 className="card-title">Adrian</h5>
+          <h5 className="card-title">Adrian!</h5>
           <p className="card-text">
-            Adrian loves Mangos! He worked on the backend of this project. <br />&#160;
+            Adrian loves Mangos! He worked on the backend of this project.{" "}
+            <br />
+            &#160;
           </p>
           <a
             href="https://github.com/adrian-palacios"

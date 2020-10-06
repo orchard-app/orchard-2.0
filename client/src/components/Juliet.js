@@ -4,18 +4,21 @@ function Juliet() {
   return (
     <div className="col-sm-12 col-md-6 col-lg-3 mb-3">
       <div className="card card-about">
-        <img 
+        <img
           className="card-img-top juliet"
-          src={require("../julietplant-1.jpg")} 
-          alt="Juliet" 
+          src={require("../julietplant-1.jpg")}
+          alt="Juliet"
         />
         <div className="card-body">
-          <h5 className="card-title">Juliet</h5>
+          <h5 className="card-title">Juliet!</h5>
           <p className="card-text">
-            Juliet loves to garden! She worked on the back and front end of this project. <br />&#160;
-          
+            Juliet loves to garden! She worked on the back and front end of this
+            project. <br />
+            &#160;
           </p>
-          <a href="https://github.com/julietg19" className="btn btn-primary">Juliet's Github</a>
+          <a href="https://github.com/julietg19" className="btn btn-primary">
+            Juliet's Github
+          </a>
         </div>
       </div>
     </div>
