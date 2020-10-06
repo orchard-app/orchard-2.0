@@ -108,3 +108,11 @@ h6 {
 .words {
   font-family: "Alata", sans-serif;
 }
+
+.navbar-dark .navbar-nav .nav-link {
+  font-size: larger;
+}
+
+.navbar-nav:last-child {
+  padding: 0 0;
+}

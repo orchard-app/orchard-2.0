@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { Row, CardGroup, Card, CardDeck } from "react-bootstrap";
+import { Row, CardGroup } from "react-bootstrap";
 import { Hero } from "../components";
 import Steve from "../components/Steve";
 import Juliet from "../components/Juliet";
@@ -19,18 +19,10 @@ const Home = () => (
       <Row>
         <Steve />
         <Juliet />
-        {/* </Row>
-    </CardGroup>
-    <CardGroup>
-      <Row className="second-row"> */}
         <Adrian />
         <Steph />
       </Row>
     </CardGroup>
-    {/* <CardDeck>
-      <Steve />
-      <Steph />
-    </CardDeck> */}
   </Fragment>
 );
 
