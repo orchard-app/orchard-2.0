@@ -18,17 +18,18 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static("client/build"));
-  // app.use('/api/categories', require('./controllers/Categories'));
-  app.use("/api/items", require("./controllers/Items"));
-  app.use("/api/listings", require("./controllers/Listings"));
-  app.use("/api/user", require("./controllers/Users"));
-  app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname + "/client/build/"));
-  });
-} else {
-  app.use(express.static(path.join(__dirname, "/client/public")));
+
+	app.use(express.static("client/build"));
+	// app.use('/api/categories', require('./controllers/Categories'));
+	app.use("/api/items", require("./controllers/Items"));
+	app.use("/api/listings", require("./controllers/Listings"));
+	app.use("/api/user", require("./controllers/Users"));
+	app.get("*", (req, res) => {
+		res.sendFile(path.join(__dirname + "/client/build/"));
+	});
 }
+
+  
 // Add routes, both API and view
 //app.use(routes);
 // adding category route
@@ -42,7 +43,7 @@ app.use("/api/user", require("./controllers/Users"));
 // Start the API server
 // ADD SEQUELIZE HERE TO CONNECT TO YOUR DB
 db.sequelize.sync({ force: false }).then(() => {
-  app.listen(PORT, () => {
-    console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
-  });
+	app.listen(PORT, () => {
+		console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
+	});
 });
